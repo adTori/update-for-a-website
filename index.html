@@ -8,10 +8,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap"
     rel="stylesheet">
-
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -51,52 +48,20 @@
   <!-- Hero -->
   <section class="hero-section">
     <div class="hero">
-
       <div class="hero-left">
         <div class="eyebrow">Privat psykolog · På plats & Online</div>
-        <br>
         <h1>Vi hjälper Dig<br>att må bättre</h1>
-
         <p class="hero-body">
           Det ska vara enkelt att prata med en psykolog, oavsett om du vill må bättre eller öka din livskvalité.
         </p>
-        <br>
         <div class="cta-row">
-          <button class="cta-main">
-            Välj din psykolog
-          </button>
+          <button class="cta-main">Välj din psykolog</button>
           <button class="cta-secondary">Gratis konsultation</button>
-        </div>
-        <br>
-        <div class="trust-row">
-          <div class="trust-item">
-            <span class="trust-num">4.9★</span>
-            <span class="trust-label">Snittbetyg</span>
-          </div>
-          <br>
-          <div class="trust-divider"></div>
-
-          <div class="trust-item">
-            <span class="trust-num">5 000+</span>
-            <span class="trust-label">Nöjda patienter</span>
-          </div>
-          <br>
-          <div class="trust-divider"></div>
-
-          <div class="trust-item">
-            Se video på psykologer</span>
-          </div>
         </div>
       </div>
 
       <div class="hero-right">
         <div class="hero-bg-shape">
-          <!-- <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">"Äntligen en psykolog jag verkligen klickar med. Allt gick snabbt och enkelt."</p>
-        <div class="review-author">— Maria K., Stockholm</div>
-    </div> -->
-
           <div class="doctor-card">
             <div class="doctor-placeholder">
               <div class="silhouette">👤</div>
@@ -114,14 +79,15 @@
             <button class="booking-btn">Boka denna tid</button>
           </div>
         </div>
-
       </div>
+    </div>
   </section>
+
   <!-- Footer -->
   <footer>
     <div class="footer-main">
 
-      <!-- Brand column -->
+      <!-- Brand -->
       <div class="footer-brand">
         <a href="#" class="logo">
           <span class="heart">♡</span>Svea<span class="kbt">KBT</span>
@@ -148,12 +114,14 @@
         </div>
       </div>
 
-      <!-- Om oss column -->
+      <!-- Om oss -->
       <div>
         <div class="footer-col-title">Om oss</div>
         <ul class="footer-links">
           <li><a href="#">Om Svea KBT</a></li>
           <li><a href="#">Psykologer</a></li>
+          <li><a href="#">Psykologiska tester</a></li>
+          <li><a href="#">Terapi med psykologstudent</a></li>
           <li><a href="#">Behandlingar</a></li>
           <li><a href="#">Våra utredningar</a></li>
           <li><a href="#">Priser</a></li>
@@ -162,7 +130,7 @@
         </ul>
       </div>
 
-      <!-- Kontakt column -->
+      <!-- Kontakt -->
       <div>
         <div class="footer-col-title">Kontakt</div>
         <a href="#" class="footer-contact-item">
@@ -179,6 +147,23 @@
         </a>
       </div>
 
+      <!-- Extra länkar -->
+      <div class="extra-links">
+        <div class="footer-col-title">Mer</div>
+        <ul class="footer-links">
+
+          <li><a href="#">Företagstjänster</a></li>
+          <li><a href="#">Fakta och råd</a></li>
+          <li><a href="#">Frågor och svar</a></li>
+          <li><a href="#">Karriär</a></li>
+          <li><a href="#">PTP-tjänst</a></li>
+          <li><a href="#">Praktik</a></li>
+          <li><a href="#">English</a></li>
+          <li><a href="#">Köpvillkor</a></li>
+          <li><a href="#">Integritetspolicy</a></li>
+        </ul>
+      </div>
+
     </div>
 
     <!-- Bottom bar -->
@@ -190,6 +175,14 @@
       </div>
     </div>
   </footer>
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  navToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active'); // öppnar/stänger menyn
+  });
+</script>
 </body>
 
 </html>

@@ -164,7 +164,7 @@ nav {
   display: none;
   flex-direction: column;
   gap: 5px;
-  background: none;
+  background: #ffffff; /* vit bakgrund */
   border: none;
   cursor: pointer;
   z-index: 200;
@@ -235,39 +235,6 @@ h1 {
 /* =====================================================
    FLOATING CARDS
 ===================================================== */
-/* .review-card {
-  position: absolute;
-  bottom: 2%;
-  left: 55%;
-  z-index: 3;
-  background: #fff;
-  border-radius: 16px;
-  padding: 16px 20px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.1);
-  width: 220px;
-  animation: float 4s ease-in-out infinite;
-} */
-
-/* .review-stars {
-  color: var(--gold);
-  font-size: 0.9rem;
-  letter-spacing: 2px;
-  margin-bottom: 6px;
-}
-
-.review-text {
-  font-size: 0.78rem;
-  line-height: 1.5;
-  font-style: italic;
-}
-
-.review-author {
-  margin-top: 10px;
-  font-size: 0.73rem;
-  color: var(--text-muted);
-  font-weight: 500;
-} */
-
 .booking-card {
   position: absolute;
   top: 35%;
@@ -341,12 +308,10 @@ h1 {
 }
 
 @keyframes float {
-
   0%,
   100% {
     transform: translateY(0);
   }
-
   50% {
     transform: translateY(-10px);
   }
@@ -359,6 +324,9 @@ footer {
   background: var(--ink);
   color: #fff;
   margin-top: 80px;
+  font-family: 'Poppins', Hind;
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
 
 .footer-main {
@@ -366,37 +334,35 @@ footer {
   margin: 0 auto;
   padding: 80px 60px 60px 60px;
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr; /* Brand, Om oss, Kontakt, Extra länkar */
   gap: 60px;
+}
+
+.footer-main > div {
+  display: flex;
+  flex-direction: column;
 }
 
 footer .logo {
   color: #fff;
   font-size: 1.5rem;
+  margin-bottom: 16px;
 }
 
-footer .kbt {
-  color: var(--gold);
-}
-
+footer .kbt,
 footer .heart {
   color: var(--gold);
-  /* hjärtat i footern återställt */
-  margin-right: 4px;
 }
 
 .footer-desc {
-  margin-top: 24px;
-  font-size: 0.9rem;
-  line-height: 1.7;
   opacity: 0.85;
-  max-width: 480px;
+  margin-bottom: 32px;
 }
 
 .footer-meta {
   display: flex;
   gap: 60px;
-  margin-top: 32px;
+  margin-bottom: 28px;
 }
 
 .footer-meta-label {
@@ -409,13 +375,12 @@ footer .heart {
 
 .footer-meta-value {
   font-size: 0.85rem;
-  line-height: 1.6;
 }
 
 .footer-socials {
   display: flex;
   gap: 14px;
-  margin-top: 28px;
+  margin-bottom: 28px;
 }
 
 .social-btn {
@@ -441,21 +406,21 @@ footer .heart {
   font-size: 0.85rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
   opacity: 0.7;
 }
 
 .footer-links {
   list-style: none;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 12px;
 }
 
 .footer-links a {
   text-decoration: none;
-  color: #fff;
-  font-size: 0.9rem;
+  color: var(--cream); /* creme-färg */
   opacity: 0.85;
   transition: opacity 0.2s;
 }
@@ -469,10 +434,8 @@ footer .heart {
   align-items: center;
   gap: 12px;
   text-decoration: none;
-  color: #fff;
-  padding: 10px 0;
-  font-size: 0.9rem;
-  opacity: 0.85;
+  color: var(--cream);
+  padding: 8px 0;
   transition: opacity 0.2s;
 }
 
@@ -481,8 +444,8 @@ footer .heart {
 }
 
 .contact-icon {
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.08);
   display: flex;
@@ -503,12 +466,12 @@ footer .heart {
 
 .footer-bar-links {
   display: flex;
-  gap: 30px;
+  gap: 24px;
 }
 
 .footer-bar-links a {
   text-decoration: none;
-  color: #fff;
+  color: var(--cream); /* creme-färg */
   transition: opacity 0.2s;
 }
 
@@ -516,11 +479,15 @@ footer .heart {
   opacity: 1;
 }
 
+/* EXTRA LÄNKAR */
+.footer-main > div.extra-links .footer-links {
+  column-count: 2; /* dela upp långa listor på desktop */
+  column-gap: 20px;
+}
+
 /* =====================================================
    RESPONSIVE
 ===================================================== */
-
-/* Tablet */
 @media (max-width: 1024px) {
   nav {
     padding: 20px 30px;
@@ -539,12 +506,10 @@ footer .heart {
     order: 2;
   }
 
-  /* .review-card { display: none; } */
-
   .footer-main {
-    padding: 60px 30px 50px 30px;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
+    padding: 60px 30px 50px 30px;
   }
 
   .footer-meta {
@@ -555,11 +520,13 @@ footer .heart {
   .footer-bar {
     padding: 20px 30px;
   }
+
+  .footer-main > div.extra-links .footer-links {
+    column-count: 1;
+  }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
-
   nav {
     padding: 16px 20px;
   }
@@ -601,8 +568,8 @@ footer .heart {
 
   .footer-main {
     grid-template-columns: 1fr;
-    padding: 50px 20px;
     gap: 40px;
+    padding: 50px 20px;
   }
 
   .footer-bar {
@@ -624,7 +591,7 @@ footer .heart {
   .nav-links {
     display: flex;
     position: fixed;
-    top: 60px; /* adjust to match your navbar height */
+    top: 60px;
     left: 0;
     right: 0;
     background: #ffffff;
@@ -633,7 +600,7 @@ footer .heart {
     gap: 24px;
     padding: 24px 0;
     font-size: 1.2rem;
-    transform: translateY(-150%);
+    transform: translateY(0%);
     transition: transform 0.35s ease;
     z-index: 150;
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
@@ -646,9 +613,12 @@ footer .heart {
   .btn-primary {
     margin-top: 20px;
   }
+
+  .footer-main > div.extra-links .footer-links {
+    column-count: 1;
+  }
 }
 
-/* Small Mobile */
 @media (max-width: 480px) {
   html {
     font-size: 15px;
