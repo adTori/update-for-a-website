@@ -611,28 +611,29 @@ footer .heart {
 
   .nav-toggle {
     display: flex;
+    background: #ffffff;
   }
 
   .nav-links {
+    display: flex;
     position: fixed;
-    inset: 0;
-    background: var(--cream);
+    top: 60px; /* adjust to match your navbar height */
+    left: 0;
+    right: 0;
+    background: #ffffff;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 24px;
+    padding: 24px 0;
     font-size: 1.2rem;
-    transform: translateX(100%);
+    transform: translateY(-150%);
     transition: transform 0.35s ease;
+    z-index: 150;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
   }
 
   .nav-links.active {
-    transform: translateX(0);
-  }
-
-  .nav-links a {
-    font-size: 1.2rem;
-    opacity: 1;
+    transform: translateY(0);
   }
 
   .btn-primary {
