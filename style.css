@@ -552,9 +552,6 @@ footer .heart {
 
 /* Mobile */
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
 
   nav {
     padding: 16px 20px;
