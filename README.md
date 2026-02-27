@@ -23,12 +23,11 @@ En modern, responsiv landningssida byggd med HTML, CSS och lite JavaScript. Proj
 ## Installation & användning
 
 1. Klona repot:
-
 git clone <din-repo-url>
 
-2. Öppna `index.html` i webbläsaren.
+4. Öppna `index.html` i webbläsaren.
 
-3. För utveckling med live reload kan du använda t.ex. [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) i VS Code.
+5. För utveckling med live reload kan du använda t.ex. [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) i VS Code.
 
 ## Struktur
 
@@ -53,16 +52,6 @@ Färger och typografi definieras i `:root`, vilket gör det enkelt att ändra te
   --cream: #faf8f5;
   --ink: #1a1a2e;
 }
-
-## Bidra
-
-Om du vill bidra:
-
-1. Forka projektet
-2. Skapa en ny branch (`git checkout -b feature-namn`)
-3. Commit:a dina ändringar (`git commit -m "Beskrivning av ändring"`)
-4. Push:a till din branch (`git push origin feature-namn`)
-5. Skapa en Pull Request
 
 ## Licens
 
