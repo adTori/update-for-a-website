@@ -589,8 +589,7 @@ footer .heart {
   }
 
   .nav-links {
-    display: flex;
-    position: fixed;
+    display: none;
     top: 60px;
     left: 0;
     right: 0;
@@ -606,10 +605,10 @@ footer .heart {
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
   }
 
-  .nav-links.active {
-    transform: translateY(0);
-  }
-
+.nav-links.active {
+  display: flex;
+  
+}
   .btn-primary {
     margin-top: 20px;
   }
