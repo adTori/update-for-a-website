@@ -8,20 +8,9 @@ document.querySelector(".logo").addEventListener("click", function(e) {
 });
 
 // Hamburgarmeny för mobilvy
-const toggle = document.querySelector(".nav-toggle");
-const navLinks = document.querySelector(".nav-links");
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelector('.nav-links');
 
-toggle.addEventListener("click", () => {
-  const isOpen = navLinks.classList.toggle("active");
-
-  toggle.classList.toggle("active");
-  toggle.setAttribute("aria-expanded", isOpen);
-});
-
-document.querySelectorAll(".nav-links a").forEach(link => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("active");
-    toggle.classList.remove("active");
-    toggle.setAttribute("aria-expanded", "false");
-  });
+navToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
 });
