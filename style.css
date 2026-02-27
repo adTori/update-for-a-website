@@ -140,6 +140,8 @@ nav {
   border-radius: 40px;
   cursor: pointer;
   transition: all 0.2s;
+  font-size: medium;
+  font-weight: bold;
 }
 
 .btn-primary:hover {
@@ -210,17 +212,21 @@ h1 {
 .cta-main {
   background: var(--svea-primary);
   color: #fff;
+  font-size: large;
+  font-weight: bold;
 }
 
 .cta-secondary {
-  background: var(--ink);
-  color: #fff;
+  background: var(--svea-primary-light);
+  color: #000000;
+  font-size: large;
+  font-weight: bold;
 }
 
 .cta-main:hover,
 .cta-secondary:hover {
-  background: var(--svea-primary-light);
-  color: #000000;
+  background: var(--sage);
+  color: #fff;
   transform: translateY(-2px);
   box-shadow: 0 10px 30px rgba(26, 26, 46, 0.2);
 }
