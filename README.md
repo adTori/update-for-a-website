@@ -1,10 +1,8 @@
-Absolut! Jag kan hjälpa dig skriva en tydlig, professionell och lättläst **README** för ditt projekt. Eftersom jag ser att du jobbar med en responsiv webbplats med navbar, hero-sektion, kort (cards), och footer, så kan vi strukturera README:n så här:
 
 ---
 
-# Projekt README (Exempel)
+# Projekt README
 
-````markdown
 # Svea Landing Page
 
 En modern, responsiv landningssida byggd med HTML, CSS och lite JavaScript. Projektet inkluderar en mobilvänlig navigationsmeny (hamburger), hero-sektion, flytande kort och en stilren footer.
@@ -30,9 +28,7 @@ En modern, responsiv landningssida byggd med HTML, CSS och lite JavaScript. Proj
 
 1. Klona repot:
 
-```bash
 git clone <din-repo-url>
-````
 
 2. Öppna `index.html` i webbläsaren.
 
@@ -40,12 +36,10 @@ git clone <din-repo-url>
 
 ## Struktur
 
-```
 /index.html          # Startsida
 /css/style.css       # All CSS inklusive responsivitet
 /js/main.js          # JavaScript för hamburgermeny
 /images/             # Bilder och illustrationer
-```
 
 ## Mobil & Responsivitet
 
@@ -57,14 +51,12 @@ git clone <din-repo-url>
 
 Färger och typografi definieras i `:root`, vilket gör det enkelt att ändra tema:
 
-```css
 :root {
   --svea-primary: #833EA9;
   --svea-primary-light: #DAA6C9;
   --cream: #faf8f5;
   --ink: #1a1a2e;
 }
-```
 
 ## Bidra
 
@@ -80,15 +72,3 @@ Om du vill bidra:
 
 Detta projekt är licensierat under MIT License.
 
----
-
-```
-
-💡 Tips: Du kan även lägga till **skärmdumpar** eller GIFs som visar hamburger-menyn och hero-sektionen för att README:n ska bli mer visuellt tilltalande.  
-
----
-
-Om du vill kan jag skriva en **version som är färdig med badges, screenshot-sektion och live-demo-länk**, redo att klistra in direkt i GitHub.  
-
-Vill du att jag gör det?
-```
