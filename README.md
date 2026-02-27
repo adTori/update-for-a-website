@@ -1,8 +1,4 @@
 
----
-
-# Projekt README
-
 # Svea Landing Page
 
 En modern, responsiv landningssida byggd med HTML, CSS och lite JavaScript. Projektet inkluderar en mobilvänlig navigationsmeny (hamburger), hero-sektion, flytande kort och en stilren footer.
