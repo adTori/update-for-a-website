@@ -7,7 +7,7 @@ En modern, responsiv landningssida byggd med HTML, CSS och lite JavaScript. Proj
 
 - **Responsiv design** – fungerar på desktop, tablet och mobil.
 - **Hamburger-meny** – klickbar meny med snygg animation på mobil.
-- **Hero-sektion** – stor rubrik, call-to-action-knappar och illustration.
+- **Hero-sektion** – stor rubrik, call-to-action-knapp och illustration.
 - **Flytande kort** – visuella element som "booking-card" med animation.
 - **Footer** – stilren footer med sociala länkar, kontaktinfo och copyright.
 - **CSS-variabler** – enkelt att ändra färger och typografi.
@@ -18,7 +18,7 @@ En modern, responsiv landningssida byggd med HTML, CSS och lite JavaScript. Proj
 - **HTML5**
 - **CSS3** med variabler och flex/grid layout
 - **JavaScript** för klickbar hamburger-meny
-- Google Fonts: `Poppins`, `Hind`, `Playfair Display`
+- Google Fonts: `Poppins`, `Hind`
 
 ## Installation & användning
 
